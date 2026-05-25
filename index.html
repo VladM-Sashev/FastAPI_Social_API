@@ -1,0 +1,41 @@
+<<body>
+
+<h1>CORS Test</h1>
+
+<div id="posts"></div>
+
+<script>
+
+const token ="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSIsImV4cCI6MTc3OTY0ODQ4N30.cStGeJ9_p0n4-w4TA8c9tK-UXGWDkMrSPe0bw66hEnA"
+
+fetch("http://localhost:8000/posts/", {
+
+headers:{
+Authorization:`Bearer ${token}`
+}
+
+})
+
+.then(r=>r.json())
+
+.then(posts=>{
+
+const container =
+document.getElementById("posts");
+
+posts.forEach(post=>{
+
+container.innerHTML +=
+`
+<h3>${post.title}</h3>
+<p>${post.content}</p>
+<hr>
+`;
+
+});
+
+});
+
+</script>
+
+</body>
