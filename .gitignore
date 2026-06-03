@@ -40,3 +40,9 @@ dist/
 
 # Temporary files
 *.tmp
+
+# Environment variables
+.env
+
+# Virtual environment
+venv/
