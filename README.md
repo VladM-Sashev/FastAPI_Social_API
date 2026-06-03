@@ -1,4 +1,11 @@
+
 # FastAPI Social API
+
+![Python](https://img.shields.io/badge/Python-3.13-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.136-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Render](https://img.shields.io/badge/Deployed%20on-Render-purple)
+![Neon](https://img.shields.io/badge/Database-Neon-brightgreen)
 
 A RESTful social media backend API built with FastAPI.
 
