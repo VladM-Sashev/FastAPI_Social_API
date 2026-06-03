@@ -26,18 +26,31 @@ https://fastapi-social-api-11q7.onrender.com/docs
 
 ---
 
-
 ## 🛠️ Tech Stack
 
-- 🐍 [Python](https://www.python.org/)
-- ⚡ [FastAPI](https://fastapi.tiangolo.com/)
-- 🐘 [PostgreSQL](https://www.postgresql.org/)
-- 🗄️ [SQLAlchemy](https://www.sqlalchemy.org/)
-- 🔄 [Alembic](https://alembic.sqlalchemy.org/)
+- 🐍 Python
+- ⚡ FastAPI
+- 🐘 PostgreSQL
+- 🗄️ SQLAlchemy
+- 🔄 Alembic
 - 🔐 JWT Authentication
-- ✅ [Pydantic](https://docs.pydantic.dev/)
-- 🚀 [Uvicorn](https://www.uvicorn.org/)
----
+- ✅ Pydantic
+- 🚀 Uvicorn
+- ☁️ Neon Database
+- 🌐 Render
+
+## ☁️ Deployment
+
+- Backend deployed on Render
+- PostgreSQL database hosted on Neon
+- Database schema managed with Alembic migrations
+- Interactive API documentation available via Swagger/OpenAPI
+
+Live API:
+https://fastapi-social-api-11q7.onrender.com
+
+Swagger Docs:
+https://fastapi-social-api-11q7.onrender.com/docs
 
 ## Project Structure
 
