@@ -20,7 +20,6 @@ This project allows users to register, authenticate using JWT tokens, create pos
 
 ---
 
-## Tech Stack
 
 ## 🛠️ Tech Stack
 
