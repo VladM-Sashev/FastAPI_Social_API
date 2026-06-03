@@ -52,6 +52,24 @@ https://fastapi-social-api-11q7.onrender.com
 Swagger Docs:
 https://fastapi-social-api-11q7.onrender.com/docs
 
+## 🔒 Security Features
+
+- JWT-based authentication
+- Password hashing using Argon2
+- Protected routes with token validation
+- Ownership checks for post updates and deletions
+- Environment variables for sensitive configuration
+
+  ## 🏗️ Architecture
+
+Client
+   ↓
+FastAPI
+   ↓
+SQLAlchemy ORM
+   ↓
+PostgreSQL (Neon)
+
 ## Project Structure
 
 ```
@@ -209,6 +227,18 @@ Authorization: Bearer <token>
 ```
 
 ---
+## 📚 What I Learned
+
+Through this project I gained practical experience with:
+
+- Building REST APIs using FastAPI
+- JWT authentication and authorization
+- Database modeling with SQLAlchemy
+- Database migrations using Alembic
+- Cloud database integration with Neon
+- Application deployment using Render
+- Environment variable management
+- API documentation using Swagger/OpenAPI
 
 ## Future Improvements
 
