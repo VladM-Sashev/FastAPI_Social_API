@@ -22,15 +22,16 @@ This project allows users to register, authenticate using JWT tokens, create pos
 
 ## Tech Stack
 
-- Python
-- FastAPI
-- PostgreSQL
-- SQLAlchemy
-- Alembic
-- JWT Authentication
-- Pydantic
-- Uvicorn
+## 🛠️ Tech Stack
 
+- 🐍 [Python](https://www.python.org/)
+- ⚡ [FastAPI](https://fastapi.tiangolo.com/)
+- 🐘 [PostgreSQL](https://www.postgresql.org/)
+- 🗄️ [SQLAlchemy](https://www.sqlalchemy.org/)
+- 🔄 [Alembic](https://alembic.sqlalchemy.org/)
+- 🔐 JWT Authentication
+- ✅ [Pydantic](https://docs.pydantic.dev/)
+- 🚀 [Uvicorn](https://www.uvicorn.org/)
 ---
 
 ## Project Structure
