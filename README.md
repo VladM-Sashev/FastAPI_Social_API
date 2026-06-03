@@ -84,20 +84,36 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure environment variables
+### 4. Configure Environment Variables
 
-Create a `.env` file and configure:
+Create a `.env` file in the project root and configure the following variables:
 
 ```env
 DATABASE_HOSTNAME=localhost
 DATABASE_PORT=5432
-DATABASE_NAME=fastapi
+DATABASE_NAME=fastapi_2026
 DATABASE_USERNAME=postgres
 DATABASE_PASSWORD=your_password
+
 SECRET_KEY=your_secret_key
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
+
+Make sure PostgreSQL is running and create the database before running migrations:
+
+```sql
+CREATE DATABASE fastapi_2026;
+```
+
+If you included a `.env.example` file in the repository, you can copy it with:
+
+```bash
+cp .env.example .env
+```
+
+Then update the values in `.env` with your local PostgreSQL credentials and secret key.
+
 
 ### 5. Run database migrations
 
