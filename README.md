@@ -62,48 +62,83 @@ FastAPI_Social_API/
 ```
 
 ---
-
 ## Installation
 
-Clone repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/VladM-Sashev/FastAPI_Social_API.git
-```
-
-Go into project:
-
-```bash
 cd FastAPI_Social_API
 ```
 
-Create virtual environment:
+### 2. Create and activate a virtual environment
 
 ```bash
 python -m venv venv
-```
-
-Activate environment:
-
-Mac/Linux:
-
-```bash
 source venv/bin/activate
 ```
 
-Install dependencies:
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run application:
+### 4. Configure environment variables
 
-```bash
-python -m uvicorn app.main:app --reload
+Create a `.env` file and configure:
+
+```env
+DATABASE_HOSTNAME=localhost
+DATABASE_PORT=5432
+DATABASE_NAME=fastapi
+DATABASE_USERNAME=postgres
+DATABASE_PASSWORD=your_password
+SECRET_KEY=your_secret_key
+ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
----
+### 5. Run database migrations
+
+```bash
+alembic upgrade head
+```
+
+### 6. Start the application
+
+```bash
+uvicorn app.main:app --reload
+```
+
+### 7. Open API Documentation
+
+```
+http://127.0.0.1:8000/docs
+```
+
+## Database Migrations
+
+This project uses Alembic for database version control.
+
+To apply all migrations:
+
+```bash
+alembic upgrade head
+```
+
+To create a new migration:
+
+```bash
+alembic revision --autogenerate -m "migration description"
+```
+
+To apply the new migration:
+
+```bash
+alembic upgrade head
+```
+
 
 ## API Documentation
 
