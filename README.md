@@ -59,7 +59,23 @@ FastAPI_Social_API/
 ├── .env.example
 └── README.md
 ```
+## 📸 Screenshots
 
+### Swagger UI Overview
+
+![Swagger UI](screenshots/swagger_ui1.png)
+
+### API Endpoints
+
+![API Endpoints](screenshots/swagger_ui2.png)
+
+### JWT Authentication
+
+![JWT Authentication](screenshots/login_response.png)
+
+### Create Post
+
+![Create Post](screenshots/create_post.png)
 ---
 ## Installation
 
