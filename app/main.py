@@ -8,11 +8,18 @@ app = FastAPI(
     description="A REST API for users, posts, authentication, and voting.",
     version="1.0.0"
 )
+@app.get("/")
+def root():
+    return {
+        "message": "FastAPI Social API is running"
+    }
 
 origins = [
     "http://localhost:3000",
     "http://localhost:5173",
 ]
+
+
 
 app.add_middleware(
     CORSMiddleware,
