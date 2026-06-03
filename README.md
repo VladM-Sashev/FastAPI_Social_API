@@ -136,9 +136,9 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Configure Environment Variables
+## 4. Configure Environment Variables
 
-Create a `.env` file in the project root and configure the following variables:
+Create a `.env` file in the project root:
 
 ```env
 DATABASE_HOSTNAME=localhost
@@ -152,26 +152,11 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-Make sure PostgreSQL is running and create the database before running migrations:
+⚠️ These are example values for local development only.
 
-```sql
-CREATE DATABASE fastapi_2026;
+For production deployment, environment variables are managed securely through Render and the PostgreSQL database is hosted on Neon.
 ```
 
-If you included a `.env.example` file in the repository, you can copy it with:
-
-```bash
-cp .env.example .env
-```
-
-Then update the values in `.env` with your local PostgreSQL credentials and secret key.
-
-
-### 5. Run database migrations
-
-```bash
-alembic upgrade head
-```
 
 ### 6. Start the application
 
