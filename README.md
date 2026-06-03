@@ -7,15 +7,17 @@
 ![Render](https://img.shields.io/badge/Deployed%20on-Render-purple)
 ![Neon](https://img.shields.io/badge/Database-Neon-brightgreen)
 
-A RESTful social media backend API built with FastAPI.
+A production-ready RESTful social media backend API built with FastAPI, PostgreSQL, SQLAlchemy, and JWT authentication. The application is deployed on Render and uses a cloud PostgreSQL database hosted on Neon.
 
 This project allows users to register, authenticate using JWT tokens, create posts, vote on posts, and interact with a PostgreSQL database.
 
-# Live API:
-https://fastapi-social-api-11q7.onrender.com
+## Live API
 
-# Swagger Docs:
-https://fastapi-social-api-11q7.onrender.com/docs
+🔗 https://fastapi-social-api-11q7.onrender.com
+
+## Swagger Documentation
+
+📖 https://fastapi-social-api-11q7.onrender.com/docs
 
 ## Features
 
@@ -58,6 +60,14 @@ https://fastapi-social-api-11q7.onrender.com
 
 Swagger Docs:
 https://fastapi-social-api-11q7.onrender.com/docs
+
+## Production Deployment
+
+- Backend deployed on Render
+- PostgreSQL database hosted on Neon
+- Environment variables managed securely through Render
+- Database migrations managed using Alembic
+- Interactive API documentation generated with Swagger/OpenAPI
 
 ## 🔒 Security Features
 
@@ -173,6 +183,12 @@ uvicorn app.main:app --reload
 
 ### 7. Open API Documentation
 
+```text
+http://127.0.0.1:8000/docs
+```
+
+### 7. Open API Documentation
+
 ```
 http://127.0.0.1:8000/docs
 ```
@@ -219,18 +235,29 @@ Authorization: Bearer <token>
 ```
 
 ---
-## 📚 What I Learned
+## What I Learned
 
 Through this project I gained practical experience with:
 
-- Building REST APIs using FastAPI
-- JWT authentication and authorization
-- Database modeling with SQLAlchemy
-- Database migrations using Alembic
-- Cloud database integration with Neon
-- Application deployment using Render
-- Environment variable management
-- API documentation using Swagger/OpenAPI
+- Building RESTful APIs using FastAPI
+- Implementing JWT authentication and authorization
+- Designing relational database schemas with PostgreSQL
+- Managing database migrations using Alembic
+- Using SQLAlchemy ORM for database operations
+- Deploying production applications on Render
+- Managing cloud databases with Neon
+- Working with environment variables and secret management
+- Publishing API documentation with Swagger/OpenAPI
+
+  ## Project Purpose
+
+This project was developed as part of my backend software engineering portfolio to demonstrate practical experience with:
+
+- API development
+- Authentication and authorization
+- Database design
+- Cloud deployment
+- Production configuration
 
 ## Future Improvements
 
