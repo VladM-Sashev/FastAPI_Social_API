@@ -11,7 +11,10 @@ app = FastAPI(
 @app.get("/")
 def root():
     return {
-        "message": "FastAPI Social API is running"
+        "project": "FastAPI Social API",
+        "status": "online",
+        "documentation": "https://fastapi-social-api-11q7.onrender.com/docs",
+        "author": "Vladimir Merdzhanov"
     }
 
 origins = [
