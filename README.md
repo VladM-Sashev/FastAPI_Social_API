@@ -4,6 +4,12 @@ A RESTful social media backend API built with FastAPI.
 
 This project allows users to register, authenticate using JWT tokens, create posts, vote on posts, and interact with a PostgreSQL database.
 
+# Live API:
+https://fastapi-social-api-11q7.onrender.com
+
+# Swagger Docs:
+https://fastapi-social-api-11q7.onrender.com/docs
+
 ## Features
 
 - User registration
