@@ -11,9 +11,11 @@ DATABASE_URL = (
     f"{settings.database_hostname}:"
     f"{settings.database_port}/"
     f"{settings.database_name}"
+    f"?sslmode=require"
 )
 
 engine = create_engine(DATABASE_URL)
+
 
 SessionLocal = sessionmaker(
     bind=engine,

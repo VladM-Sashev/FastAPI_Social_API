@@ -13,7 +13,8 @@ class Settings(BaseSettings):
     algorithm: str
 
     model_config = SettingsConfigDict(
-        env_file=".env"
+        env_file=".env",
+        extra="ignore"
     )
 
 
