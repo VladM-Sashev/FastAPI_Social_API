@@ -19,6 +19,58 @@ This project allows users to register, authenticate using JWT tokens, create pos
 
 📖 https://fastapi-social-api-11q7.onrender.com/docs
 
+## 🚀 Quick Start Guide
+
+To test the API through Swagger UI, follow these steps:
+
+### 1. Create a User Account
+
+Use the `POST /users` endpoint to create a new user account.
+
+Example:
+
+```json
+{
+  "email": "test@example.com",
+  "password": "password123"
+}
+```
+
+### 2. Login
+
+Use the `POST /login` endpoint with your account credentials.
+
+Example:
+
+```json
+{
+  "username": "test@example.com",
+  "password": "password123"
+}
+```
+
+A successful login will return a JWT access token.
+
+### 3. Authorize in Swagger
+
+Click the **Authorize** button at the top of the Swagger UI and enter:
+
+```text
+Bearer <your_access_token>
+```
+
+### 4. Test Protected Endpoints
+
+After authorization, you can access protected endpoints such as:
+
+* Create Post
+* Update Post
+* Delete Post
+* Vote on Posts
+
+All protected endpoints require a valid JWT token.
+
+
 ## Features
 
 - User registration
