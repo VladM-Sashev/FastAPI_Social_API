@@ -183,12 +183,6 @@ uvicorn app.main:app --reload
 
 ### 7. Open API Documentation
 
-```text
-http://127.0.0.1:8000/docs
-```
-
-### 7. Open API Documentation
-
 ```
 http://127.0.0.1:8000/docs
 ```
