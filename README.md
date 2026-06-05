@@ -27,48 +27,29 @@ To test the API through Swagger UI, follow these steps:
 
 Use the `POST /users` endpoint to create a new user account.
 
-Example:
+### 2. Authorize
 
-```json
-{
-  "email": "test@example.com",
-  "password": "password123"
-}
-```
+Click the **Authorize** button at the top of the Swagger UI.
 
-### 2. Login
+Enter:
 
-Use the `POST /login` endpoint with your account credentials.
+- username: your email address
+- password: your password
 
-Example:
+Then click **Authorize**.
 
-```json
-{
-  "username": "test@example.com",
-  "password": "password123"
-}
-```
+Swagger will automatically obtain and use a JWT access token for all protected endpoints.
 
-A successful login will return a JWT access token.
-
-### 3. Authorize in Swagger
-
-Click the **Authorize** button at the top of the Swagger UI and enter:
-
-```text
-Bearer <your_access_token>
-```
-
-### 4. Test Protected Endpoints
+### 3. Test Protected Endpoints
 
 After authorization, you can access protected endpoints such as:
 
-* Create Post
-* Update Post
-* Delete Post
-* Vote on Posts
+- Create Post
+- Update Post
+- Delete Post
+- Vote on Posts
 
-All protected endpoints require a valid JWT token.
+All protected endpoints require authentication.
 
 
 ## Features
